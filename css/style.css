@@ -17,7 +17,8 @@ body {
     max-width: 1200px;
     padding: 15px;
     justify-content: space-between;
-    align-items: center;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
     margin: 0 auto;
@@ -111,6 +112,7 @@ body {
     background: #EBEBEE;
     height: 20px;
     border-radius: 2.2px;
+    cursor: pointer;
 }
 
 .container_widget .rectangles .rec.red {
@@ -193,8 +195,12 @@ body {
     padding: 30px 40px;
     margin-bottom: 27px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    /*
+    -ms-align-items: center;
     align-items: center;
+*/
 }
 
 .container_widget .widget-right .row1 {
@@ -205,7 +211,10 @@ body {
     white-space: nowrap;
     align-items: center;
     width: 100%;
+    cursor: pointer;
+    padding-top: 20px;
 }
+
 
 .container_widget .widget-right .row1 .write-a-review {
     height: 28px;
@@ -425,4 +434,414 @@ body {
     left: 0;
     bottom: 0;
     cursor: pointer;
+}
+
+.sing-in-form input::-webkit-input-placeholder {
+    color: #767d9b;
+    font-size: 14px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.sing-in-form input::-moz-placeholder {
+    color: #767d9b;
+    font-size: 14px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.sing-in-form input:-moz-placeholder {
+    color: #767d9b;
+    font-size: 14px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.sing-in-form input:-ms-input-placeholder {
+    color: #767d9b;
+    font-size: 14px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.write-a-review-form textarea::-webkit-input-placeholder {
+    color: #767d9b;
+    font-size: 16px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.write-a-review-form textarea::-moz-placeholder {
+    color: #767d9b;
+    font-size: 16px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.write-a-review-form textarea:-moz-placeholder {
+    color: #767d9b;
+    font-size: 16px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.write-a-review-form textarea:-ms-input-placeholder {
+    color: #767d9b;
+    font-size: 16px;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+.sing-in-form input:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.sing-in-form input:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+.sing-in-form input:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.sing-in-form input:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.write-a-review-form textarea:focus::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.write-a-review-form textarea:focus::-moz-placeholder {
+    opacity: 0;
+}
+
+.write-a-review-form textarea:focus:-moz-placeholder {
+    opacity: 0;
+}
+
+.write-a-review-form textarea:focus:-ms-input-placeholder {
+    opacity: 0;
+}
+
+.write-a-review-form {
+    width: 100%;
+    font-family: 'Roboto';
+    padding-top: 25px;
+    display: none;
+}
+
+.write-a-review-form .review-form-title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.write-a-review-form .review-form-field {
+    margin-bottom: 30px;
+}
+
+.write-a-review-form .review-form-field:last-child {
+    margin-bottom: 0;
+}
+
+.write-a-review-form textarea {
+    width: 100%;
+    background: #f5f8fd;
+    height: 189px;
+    font-family: 'Roboto' !important;
+    border-radius: 8px;
+    font-weight: 500;
+    background-color: #f5f8fd;
+    padding: 22px;
+    resize: none;
+    border: none;
+    color: #767d9b;
+    font-size: 16px;
+    outline: none;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.write-a-review-form textarea:focus {
+    background: #f5f8fd;
+    box-shadow: 0 0 10px 1px #d1d1d1;
+    color: #767d9b;
+}
+
+.write-a-review-form input[type=submit] {
+    border-radius: 4px;
+    background-color: #325bff;
+    color: #fff;
+    padding: 17px;
+    width: 294px;
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto' !important;
+    border: 0;
+    font-weight: 500;
+}
+
+.write-a-review-form #btn_cancel {
+    color: #787d97;
+    margin-left: 15px;
+    font-weight: bold;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+.tags-form-block {
+    position: absolute;
+    background: #fff;
+    right: 0;
+    left: 0;
+    top: 100px;
+    padding: 25px 40px 40px;
+    z-index: 999;
+    border-radius: 8px;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.tags-form-block .tags-form-block-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+}
+
+.tags-form-block .tags-form-block-caption {
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    position: relative;
+    margin-top: -15px;
+    color: #676877;
+}
+
+.tags-form-block .tag-form-block-field {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.tags-form-block .tag-form-block-title {
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.tags-form-block .tag-form-block-title:last-child {
+    margin-bottom: 0;
+}
+
+.tags-form-block .tags-form-block-input input[type=submit] {
+    border-radius: 4px;
+    background-color: #325bff;
+    color: #fff;
+    padding: 17px;
+    width: 294px;
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto' !important;
+    border: 0;
+    font-weight: 500;
+}
+
+.sing-in-form {
+    position: absolute;
+    background: #fff;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 25px 40px 40px;
+    z-index: 999;
+    border-radius: 8px;
+    border: 1px solid #f4f6f9;
+    overflow: hidden;
+    font-family: 'Roboto';
+    visibility: hidden;
+    opacity: 0;
+}
+
+.sing-in-form .sing-in-form-title {
+    font-family: 'Roboto';
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 25px;
+    margin-bottom: 70px;
+}
+
+.sing-in-form .sing-in-form-fields-col2 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sing-in-form .sing-in-form-field {
+    width: 48%;
+    margin-bottom: 25px;
+}
+
+.sing-in-form .sing-in-form-field input:not([type=checkbox]):not([type=submit]) {
+    width: 100%;
+    border: 1px solid #dee1e6;
+    border-radius: 6px;
+    padding: 0 20px;
+    font-family: 'Roboto';
+    height: 52px;
+    color: #767d9b;
+    font-size: 14px;
+    outline: none;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.sing-in-form label.label_title {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    margin-bottom: 17px;
+
+}
+
+.sing-in-form .sing-in-form-field a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #767d9b;
+}
+
+
+
+.sing-in-form .checkbox {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sing-in-form .checkbox span {
+    font-size: 14px;
+    text-decoration: none;
+    color: #767d9b;
+    margin-left: 5px;
+}
+
+.sing-in-form .sing-in-form-btns {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.sing-in-form .sing-in-form-btns input[type=submit] {
+    border-radius: 4px;
+    background-color: #325bff;
+    color: #fff;
+    padding: 17px;
+    flex-grow: 1;
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto' !important;
+    border: 0;
+    font-weight: 500;
+}
+
+.sing-in-form .sing-in-form-btns span {
+    margin-left: 20px;
+    font-size: 14px;
+    flex-shrink: 0;
+    color: #767d9b;
+}
+
+.sing-in-form .sing-in-form-btns a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
+    height: 52px;
+    width: 52px;
+    border-radius: 4px;
+    margin-left: 20px;
+}
+
+.sing-in-form .sing-in-form-btns a.fb {
+    background: #3e68b6;
+}
+
+.sing-in-form .sing-in-form-btns a.fb svg {
+    height: 18px;
+}
+
+.sing-in-form .sing-in-form-btns a.fb svg path {
+    fill: #fff;
+}
+
+.sing-in-form .sing-in-form-btns a.google {
+    border: 1px solid #dee1e6;
+}
+
+.sing-in-form .sing-in-form-btns a.google svg {
+    height: 18px;
+}
+
+.sing-in-form .sing-in-form-register {
+    font-size: 14px;
+    flex-shrink: 0;
+    color: #767d9b;
+}
+
+.sing-in-form .sing-in-form-register a {
+    text-decoration: none;
+    color: #4ab1ec;
 }
